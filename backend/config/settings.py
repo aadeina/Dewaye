@@ -64,6 +64,8 @@ MIDDLEWARE = [
 # Allow React frontend to access API
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # React dev server
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
 ]
 
 REST_FRAMEWORK = {

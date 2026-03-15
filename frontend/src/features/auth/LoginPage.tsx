@@ -32,9 +32,11 @@ export function LoginPage(): JSX.Element {
   }
 
   return (
-    <div className="mx-auto mt-20 w-full max-w-md rounded-lg border bg-white p-6 shadow-sm">
-      <h1 className="mb-6 text-2xl font-semibold">Login</h1>
-      <form className="space-y-4" onSubmit={onSubmit}>
+    <div className="flex min-h-screen items-center justify-center">
+      <div className="w-full max-w-md rounded-lg border bg-white p-6 shadow-sm">
+        <h1 className="mb-2 text-2xl font-semibold text-center">Welcome to Dewaye</h1>
+        <h2 className="mb-6 text-xl font-semibold text-center">Login</h2>
+        <form className="space-y-4" onSubmit={onSubmit}>
         <div>
           <label className="mb-1 block text-sm font-medium">Username</label>
           <input
@@ -55,14 +57,15 @@ export function LoginPage(): JSX.Element {
           />
         </div>
         {error ? <p className="text-sm text-rose-600">{error}</p> : null}
-        <button
-          type="submit"
-          disabled={loading}
-          className="w-full rounded bg-slate-900 px-4 py-2 font-medium text-white hover:bg-black disabled:opacity-60"
-        >
-          {loading ? "Signing in..." : "Sign in"}
-        </button>
-      </form>
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full rounded bg-slate-900 px-4 py-2 font-medium text-white hover:bg-black disabled:opacity-60"
+          >
+            {loading ? "Signing in..." : "Sign in"}
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
