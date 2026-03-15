@@ -1,4 +1,4 @@
-# 💊 Dewaye - Pharmacy Management System
+# 💊 Dewaye -  Medication Finder 
 
 > A modern, full-stack pharmacy management platform that enables public medicine discovery and secure inventory management across multiple pharmacy locations.
 
