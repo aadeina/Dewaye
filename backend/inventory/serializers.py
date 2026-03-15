@@ -9,4 +9,13 @@ class InventorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Inventory
-        fields = "__all__"
+        fields = (
+            "id",
+            "pharmacy",
+            "medicine",
+            "quantity",
+            "last_updated",
+            "pharmacy_name",
+            "medicine_name",
+        )
+        read_only_fields = ("last_updated", "pharmacy_name", "medicine_name")

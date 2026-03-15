@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Medicine
+
+
+@admin.register(Medicine)
+class MedicineAdmin(admin.ModelAdmin):
+    list_display = ("name", "category", "price", "stock", "created_at", "updated_at")
+    search_fields = ("name", "category")
