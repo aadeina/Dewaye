@@ -16,20 +16,25 @@ export function Layout(): JSX.Element {
     <div className="min-h-screen bg-slate-50">
       <header className="border-b bg-white">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
-          <Link to="/" className="text-lg font-semibold text-slate-900">
-            Dewaye
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link to="/" className="text-lg font-semibold text-slate-900">
+              Dewaye
+            </Link>
+            <Link to="/" className="text-sm text-slate-500 hover:text-slate-700">
+              ← Back to Public Site
+            </Link>
+          </div>
           <nav className="flex items-center gap-2">
-            <NavLink to="/" end className={navItemClass}>
+            <NavLink to="/manage" end className={navItemClass}>
               Dashboard
             </NavLink>
-            <NavLink to="/pharmacies" className={navItemClass}>
+            <NavLink to="/manage/pharmacies" className={navItemClass}>
               Pharmacies
             </NavLink>
-            <NavLink to="/medicines" className={navItemClass}>
+            <NavLink to="/manage/medicines" className={navItemClass}>
               Medicines
             </NavLink>
-            <NavLink to="/inventory" className={navItemClass}>
+            <NavLink to="/manage/inventory" className={navItemClass}>
               Inventory
             </NavLink>
             <button

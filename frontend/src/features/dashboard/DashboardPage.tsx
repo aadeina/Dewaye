@@ -8,7 +8,7 @@ type Counts = {
   inventory: number;
 };
 
-export function DashboardPage(): JSX.Element {
+export function ManageDashboardPage(): JSX.Element {
   const [counts, setCounts] = useState<Counts>({ pharmacies: 0, medicines: 0, inventory: 0 });
   const [error, setError] = useState("");
 

@@ -2,7 +2,7 @@ import { FormEvent, useEffect, useState } from "react";
 import { api } from "../../lib/api";
 import { Pharmacy } from "../../lib/types";
 
-export function PharmaciesPage(): JSX.Element {
+export function ManagePharmaciesPage(): JSX.Element {
   const [items, setItems] = useState<Pharmacy[]>([]);
   const [error, setError] = useState("");
   const [name, setName] = useState("");

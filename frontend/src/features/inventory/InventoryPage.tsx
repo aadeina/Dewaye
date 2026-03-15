@@ -2,7 +2,7 @@ import { FormEvent, useEffect, useState } from "react";
 import { api } from "../../lib/api";
 import { InventoryItem, Medicine, Pharmacy } from "../../lib/types";
 
-export function InventoryPage(): JSX.Element {
+export function ManageInventoryPage(): JSX.Element {
   const [items, setItems] = useState<InventoryItem[]>([]);
   const [pharmacies, setPharmacies] = useState<Pharmacy[]>([]);
   const [medicines, setMedicines] = useState<Medicine[]>([]);
